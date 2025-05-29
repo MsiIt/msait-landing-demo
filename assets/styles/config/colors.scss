@@ -1,0 +1,33 @@
+// Colors from Ui KIT
+
+$color-light-100: #ffffff;
+$color-light-200: #f7f9f9;
+$color-light-300: #f4f5f7;
+$color-light-400: #eeeff2;
+$color-light-500: #eaeaf0;
+
+$color-main-100: #accaff;
+$color-main-200: #478aff;
+$color-main-300: #1959ca;
+$color-main-400: #001d51;
+
+$color-dark-100: #1f3b45;
+$color-dark-200: #001f2b;
+$color-dark-300: #000305;
+
+$color-background-footer: #001d51;
+
+$color-gradient-main: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+
+// $theme-colors: (
+//   colorMain100: $color-main-100,
+//   colorMain200: $color-main-200,
+//   colorMain300: $color-main-300,
+//   colorMain400: $color-main-400,
+// );
+
+// @each $color, $value in $theme-colors {
+//   :export {
+//     $color: $value;
+//   }
+// }

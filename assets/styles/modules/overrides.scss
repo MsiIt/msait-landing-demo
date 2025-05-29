@@ -1,0 +1,88 @@
+@layer overrides {
+  .v-input {
+    &__control {
+    }
+
+    &__details {
+    }
+
+    &__input {
+    }
+  }
+
+  .v-field {
+    --v-input-padding-top: 4px;
+    --v-field-padding-top: 4px;
+    --v-field-padding-bottom: 8px;
+
+    &--rounded {
+    }
+
+    &__field {
+    }
+    &__overlay {
+    }
+  }
+
+  .v-textarea .v-field {
+    --v-input-padding-top: 12px;
+    --v-field-padding-top: 12px;
+    --v-field-padding-bottom: 12px;
+    --v-textarea-control-height: 145px !important;
+  }
+
+  input.v-field__input {
+  }
+
+  .v-field__outline *,
+  .v-field__outline *::before,
+  .v-field__outline *::after {
+    border-color: $color-light-500;
+  }
+
+  .v-field--error .v-field-label {
+    color: rgb(253, 136, 136);
+  }
+
+  .v-field--error .v-field__outline *,
+  .v-field--error .v-field__outline *::before,
+  .v-field--error .v-field__outline *::after {
+    border-color: rgb(253, 136, 136);
+  }
+
+  .v-field--focused .v-field__outline *,
+  .v-field--focused .v-field__outline *::before,
+  .v-field--focused .v-field__outline *::after {
+    border-color: $color-main-200;
+  }
+
+  .v-btn {
+    box-shadow: none;
+  }
+
+  .v-slider {
+    .v-slider-thumb .v-slider-thumb__surface {
+      background-color: $color-main-200;
+      border: 3px solid $color-light-100;
+      box-shadow: none !important;
+    }
+
+    .v-slider-track__fill {
+      background-color: $color-main-200;
+    }
+    .v-slider-track__background {
+      background-color: $color-light-300;
+    }
+    .v-slider-thumb__label-container {
+    }
+    .v-slider-thumb__label {
+      background: none;
+      color: $color-dark-200;
+      font-size: 14px;
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+}

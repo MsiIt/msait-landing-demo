@@ -1,0 +1,112 @@
+@use 'grid' as *;
+@use 'sass:math';
+
+$p-font: 'Avenir Next Cyr', Arial, Helvetica, sans-serif;
+
+@mixin xxl-bold {
+  font-weight: 700;
+  font-size: p2r(36);
+  line-height: p2r(49);
+}
+
+@mixin xl-bold {
+  font-weight: 700;
+  font-size: p2r(28);
+  line-height: 136%;
+}
+
+@mixin l-bold {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 136%;
+}
+
+@mixin l-demibold {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: p2r(25);
+}
+
+@mixin m-medium {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: p2r(math.div(66, 3));
+}
+
+@mixin xs-medium {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 136%;
+}
+
+@mixin h1-hero {
+  font-size: p2r(72);
+  line-height: 100%;
+  font-weight: 900;
+}
+
+@mixin h1-title {
+  font-size: p2r(36);
+  line-height: 136%;
+  font-weight: 700;
+}
+
+@mixin h2-title {
+  font-size: p2r(28);
+  line-height: 136.6%;
+  font-weight: 700;
+}
+
+@mixin h3-subtitle {
+  font-size: p2r(18);
+  line-height: 136.6%;
+  font-weight: 700;
+}
+
+@mixin p-large-text {
+  font-size: p2r(18);
+  line-height: 136.6%;
+  font-weight: 600;
+}
+
+@mixin p-text {
+  font-size: p2r(16);
+  line-height: 136.6%;
+  font-weight: 600;
+}
+
+@mixin p-text-s {
+  font-size: p2r(14);
+  line-height: 136.6%;
+  font-weight: 600;
+}
+
+@mixin p-text-xs {
+  font-size: p2r(12);
+  line-height: 136.6%;
+  font-weight: 600;
+}
+
+@mixin p-large-body {
+  font-size: p2r(18);
+  line-height: 136.6%;
+  font-weight: 500;
+}
+
+@mixin p-body {
+  font-size: p2r(16);
+  line-height: 136.6%;
+  font-weight: 500;
+}
+
+@mixin p-body-s {
+  font-size: p2r(14);
+  line-height: 136.6%;
+  font-weight: 500;
+}
+
+@mixin p-body-xs {
+  font-size: p2r(12);
+  line-height: 136.6%;
+  font-weight: 500;
+}

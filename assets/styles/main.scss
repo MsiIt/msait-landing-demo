@@ -1,0 +1,108 @@
+@layer resets, vuetify, overrides;
+
+@import '~/assets/fonts/avenir-next/stylesheet.css';
+
+@import './common/resets';
+@import './common/transitions';
+
+@import './modules/vuetify-main';
+@import './modules/swiper';
+@import './modules/overrides';
+
+html {
+  font-size: $base-font-size + 0px;
+  font-family: $p-font;
+  color: $color-dark-200;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $p-font;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  background-color: $color-light-300;
+}
+
+.layout {
+  min-height: 100vh;
+}
+
+.container {
+  width: p2r(1200);
+  margin: 0 auto;
+
+  @include md {
+    margin: 0;
+    width: 100%;
+    padding: 0 p2r(30);
+  }
+
+  @include sm {
+    padding: 0 p2r(10);
+  }
+}
+
+.main-gradient {
+  background: $color-gradient-main;
+}
+
+.main-gradient-text {
+  background: $color-gradient-main;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+img {
+  user-select: none;
+}
+
+.pre-line {
+  white-space: pre-line;
+}
+
+.hidden {
+  &--md {
+    @include md {
+      display: none !important;
+    }
+  }
+  &--sm {
+    @include sm {
+      display: none !important;
+    }
+  }
+}
+
+.display {
+  &--lg {
+    @media (max-width: $bp-md) {
+      display: none !important;
+    }
+  }
+  &--md {
+    @media (min-width: $bp-md + 1px) {
+      display: none !important;
+    }
+    @media (max-width: $bp-sm) {
+      display: none !important;
+    }
+  }
+  &--sm {
+    @media (min-width: $bp-sm + 1px) {
+      display: none !important;
+    }
+  }
+}
+
+.nuxt-icon.icon,
+.icon-link {
+  line-height: 0;
+}
+
+a.anchor {
+  width: 0;
+  height: 0;
+}

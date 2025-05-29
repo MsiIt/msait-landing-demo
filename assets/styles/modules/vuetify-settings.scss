@@ -1,0 +1,38 @@
+@use '../config' as c;
+
+// $field-control-padding-top: 2px;
+// $field-control-padding-bottom: 2px;
+
+@forward 'vuetify/settings' with (
+  $layers: true,
+
+  $field-rounded-border-radius: 12px,
+  $field-color: red,
+  $field-border-width: 2px,
+  // $field-font-size: 14px,
+  $field-focused-border-width: 2px,
+  $field-outline-opacity: 1,
+
+  // $field-control-padding-top: $field-control-padding-top,
+  // $field-control-padding-bottom: $field-control-padding-bottom,
+  $input-font-weight: 500,
+  $input-control-height: 51px,
+  // $input-font-size: 14px,
+  // $input-line-height: 1.36,
+  // $input-control-height: 51px,
+  // $field-input-padding-top:
+  //   calc(var(--v-field-padding-top, $field-control-padding-top) + var(--v-input-padding-top, 0)),
+  // $field-input-padding-bottom: var(--v-field-padding-bottom, $field-control-padding-bottom),
+  // $text-field-input-padding-end: 0,
+  // $text-field-input-padding-start: 4px,
+  // $button-text-transform: unset,
+  // $button-text-letter-spacing: unset,
+  // $button-border-radius: 12px,
+  // $button-background: c.$color-main-200,
+  // $button-color: c.$color-light-100,
+  // $button-height: 56px,
+  // $button-font-size: 16px,
+  // $button-font-weight: 600,
+  // $slider-thumb-label-offset: calc(var(--v-slider-thumb-size) / 2)
+  $slider-thumb-label-offset: 4px
+);

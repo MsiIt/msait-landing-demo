@@ -1,0 +1,16 @@
+// Scaling and breakpoints
+
+$base-font-size: 16; // Anchor
+
+$bp-xs: 479px;
+//$bp-sm: 767px;
+$bp-sm: 910px;
+$bp-md: 1279px;
+
+@function p2r($size) {
+  @if ($size == 0) {
+    @return 0;
+  }
+
+  @return calc($size / $base-font-size) + 0rem;
+}
